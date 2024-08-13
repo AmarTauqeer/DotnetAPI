@@ -2,8 +2,7 @@ This is
 a  [Dotnet Core](https://learn.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-8.0), [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) Dotnet Core API.
 
 ## Dotnet Core API
-![](/images/4.pdf)
-![](/images/1.png)
+![](/images/UdemyCertificate2024.jpg)
 ![](/images/1.png)
 ![](/images/2.png)
 ![](/images/3.png)
