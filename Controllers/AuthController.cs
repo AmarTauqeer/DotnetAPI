@@ -42,6 +42,7 @@ namespace DotnetAPI.Controllers
                 cfg.CreateMap<UserForRegistrationDto, UserComplete>();
             }));
         }
+        
         [AllowAnonymous]
         [HttpPost("Register")]
         public IActionResult Register(UserForRegistrationDto userForRegistration)

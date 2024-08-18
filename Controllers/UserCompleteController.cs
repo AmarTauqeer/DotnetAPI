@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DotnetAPI.Controllers
 {
-    [Authorize]
+    // [Authorize]
     [ApiController]
     [Route("[controller]")]
     public class UserCompleteController : ControllerBase
@@ -25,6 +25,12 @@ namespace DotnetAPI.Controllers
             _dapper = new DataContextDapper(config);
             _reuseableSql = new ReuseableSql(config);
 
+        }
+
+        [HttpGet("TestGetUsers")]
+        public async Task<IActionResult> TestGetUsers()
+        {
+            return  Ok("Testing by Amar Tauqeer.");
         }
 
         [HttpGet("GetUsers/{userId}/{isActive}")]
@@ -82,9 +88,12 @@ namespace DotnetAPI.Controllers
             if (_dapper.ExecuteSqlWithParameters(sql, sqlParameters))
             {
                 return Ok();
+            }else{
+                return BadRequest("Faild to Delete a User.");
             }
 
-            throw new Exception("Faild to Delete a User.");
+            // throw new Exception("Faild to Delete a User.");
+            // return BadRequest("Faild to Delete a User.");
         }
         
 
